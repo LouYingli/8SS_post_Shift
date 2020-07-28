@@ -34,7 +34,7 @@ for cz in climate:
     temp.append(np.std(energy_cz))
     SD.append(temp)
 
-with open('./results/energy_data_SD.csv', 'w') as csvfile:
+with open('./energy_data_SD_shift.csv', 'w') as csvfile:
         for row in SD:
             SD = csv.writer(csvfile, delimiter=',')
             SD.writerow(row)
